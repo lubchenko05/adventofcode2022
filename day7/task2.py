@@ -1,5 +1,5 @@
 data = open('data.txt', 'r').read().split("\n$ ")[1:]
-root_dirs, current_path, sizes, ls_buffer = set(), [], {}, []
+root_dirs, current_path, sizes = set(), [], {}
 
 for command in data:
 	c_in = command.split('\n')[0]
