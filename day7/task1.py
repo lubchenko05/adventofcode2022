@@ -8,7 +8,6 @@ for command in data:
 	if c_in.startswith('cd'):
 		if c_in[3:] == '..':
 			current_path.pop()
-
 		else:
 			current_path.append(c_in[3:])
 
